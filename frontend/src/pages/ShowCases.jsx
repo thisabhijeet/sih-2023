@@ -8,11 +8,11 @@ function ShowCases() {
   console.log(cases, "cases");
 
   return (
-    <div className="h-screen bg-blue-300">
-      <div className="bg-blue-300 pt-8">
+    <div className="h-screen bg-slate-950">
+      <div className="bg-slate-950 pt-8">
         <Link
           to={"/addnewcase"}
-          className="bg-blue-500 text-[20px] ml-[590px] text-white font-bold px-8 py-2 rounded-full cursor-pointer"
+          className="bg-slate-500 text-[20px] ml-[590px] text-white font-bold px-8 py-2 rounded-full cursor-pointer"
         >
           Add a new case
         </Link>
@@ -24,7 +24,7 @@ function ShowCases() {
             {cases.map((info, index) => (
               <div
                 key={index}
-                className="rounded-lg bg-white overflow-hidden shadow-md"
+                className="rounded-lg bg-white overflow-hidden shadow-lg border-[8px] border-slate-800"
               >
                 <div className="p-4">
                   <h3 className="text-3xl text-center text-gray-500 font-bold mb-2">

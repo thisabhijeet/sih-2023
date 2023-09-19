@@ -19,7 +19,7 @@ function AddNewCase() {
     new Date().toISOString().split("T")[0]
   );
   const [filingNo, setFilingNo] = useState(generateUniqueID());
-  const [jurisdiction, setJurisdiction] = useState("");
+  const [jurisdiction, setJurisdiction] = useState("Delhi");
   const [victims, setVictims] = useState([{ name: "", age: "", gender: "" }]);
   const [accused, setAccused] = useState([{ name: "", age: "", gender: "" }]);
   const [selectedSections, setSelectedSections] = useState([]);
@@ -151,8 +151,8 @@ function AddNewCase() {
   // navigate("/")
   // }
   return (
-    <div className="bg-blue-300 pt-8">
-      <div className="w-[600px] mx-auto p-4">
+    <div className="bg-slate-950 pt-8">
+      <div className="w-[600px] mx-auto p-4 border-[4px] rounded-md border-gray-600">
         <h2 className="text-4xl text-center font-bold mb-12 text-white">
           Generate New Case
         </h2>
@@ -278,7 +278,7 @@ function AddNewCase() {
             ))}
             <button
               type="button"
-              className="bg-blue-500 text-[18px] text-white px-8 py-2 rounded-full cursor-pointer mt-2"
+              className=" text-[18px] bg-slate-500 text-white font-bold px-8 py-2 rounded-full cursor-pointer mt-2"
               onClick={addVictim}
             >
               Add Victim
@@ -327,7 +327,7 @@ function AddNewCase() {
             ))}
             <button
               type="button"
-              className="bg-blue-500 text-[18px] text-white px-8 py-2 rounded-full cursor-pointer mt-2"
+              className=" bg-slate-500 text-white font-bold text-[18px]  px-8 py-2 rounded-full cursor-pointer mt-2"
               onClick={addAccused}
             >
               Add Accused
@@ -335,7 +335,7 @@ function AddNewCase() {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 text-[18px] text-white px-8 py-2 rounded-full cursor-pointer mt-2 mb-4"
+            className="bg-slate-500 text-white font-bold text-[18px] px-8 py-2 rounded-full cursor-pointer mt-2 mb-4"
           >
             Submit
           </button>
